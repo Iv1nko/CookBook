@@ -53,7 +53,7 @@
         android:layout_marginStart="330dp"
         android:background="@color/white"
         android:scaleType="centerInside"
-        android:src="@drawable/_115235_exit_logout_sign_out_114030"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

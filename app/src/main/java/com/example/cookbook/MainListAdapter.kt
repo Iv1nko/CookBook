@@ -16,7 +16,6 @@ class MainListAdapter : RecyclerView.Adapter<MainListAdapter.MainListViewHolder>
             notifyDataSetChanged()
         }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainListViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
         return MainListViewHolder(view)
