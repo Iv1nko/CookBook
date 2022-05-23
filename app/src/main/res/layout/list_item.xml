@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/png_transparent_computer_icons_button_user_profile_button" />
+        app:srcCompat="@drawable/ic_add_dish" />
 
     <TextView
         android:id="@+id/title"

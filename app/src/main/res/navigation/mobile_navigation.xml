@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation">
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.cookbook.MainFragment"
+        tools:layout="@layout/fragment_main"/>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.cookbook.search"
+        tools:layout="@layout/activity_main5"/>
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.cookbook.add"
+        tools:layout="@layout/activity_main3"/>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.cookbook.account"
+        tools:layout="@layout/activity_main2"/>
+
+</navigation>
