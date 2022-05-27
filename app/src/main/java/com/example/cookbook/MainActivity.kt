@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.FragmentFactory
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -20,23 +21,25 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+
+
         setContentView(binding.root)
 
-        window.decorView.apply {
-            systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
-        }
+        val navController = Navigation.findNavController(this, R.id.nav_host_fragment_container)
+        binding.bNav.setupWithNavController(navController)
 
-        val bNav: BottomNavigationView = binding.bNav
 
-        val navController = findNavController(R.id.nav_host_fragment)
 
-        val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.navigation_menu,
-            R.id.navigation_search,
-            R.id.navigation_add,
-            R.id.navigation_account,
-        ))
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        bNav.setupWithNavController(navController)
+//        window.decorView.apply {
+//            systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
+//        }
+
+//        val bNav: BottomNavigationView = binding.bNav
+//
+//        val navController = findNavController(binding.)
+
+
+//        setupActionBarWithNavController(navController)
+//        bNav.setupWithNavController(navController)
     }
 }
